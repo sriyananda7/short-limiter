@@ -1,0 +1,122 @@
+:root {
+    --color-light-bg: #fff3f3;
+    --color-light-text: #333;
+    --color-dark-bg: #121212;
+    --color-dark-text: #eee;
+    --primary-color: #c0392b;
+    --button-bg: #e74c3c;
+    --button-hover-bg: #b83227;
+  }
+  
+  [data-theme="light"] {
+    background-color: var(--color-light-bg);
+    color: var(--color-light-text);
+  }
+  
+  [data-theme="dark"] {
+    background-color: var(--color-dark-bg);
+    color: var(--color-dark-text);
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  button {
+    background-color: var(--button-bg);
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  h1, h2 {
+    color: var(--primary-color);
+  }
+  
+  .settings, .counter, .motivation {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+  
+  [data-theme="dark"] .settings, 
+  [data-theme="dark"] .counter, 
+  [data-theme="dark"] .motivation {
+    background: rgba(25, 25, 25, 0.9);
+  }
+  
+  input[type="number"] {
+    width: 4rem;
+    margin-left: 0.5rem;
+  }
+  
+  fieldset {
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+  }
+  
+  .install-prompt {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  }
+  
+  .reminder {
+    margin: 1rem 0;
+    font-weight: bold;
+    color: var(--button-bg);
+  }
+  
+  #quote-container {
+    text-align: center;
+  }
+  
+  #motivator-photo {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+  
+  blockquote {
+    font-style: italic;
+    margin: 0.5rem 0;
+  }
+  
+  cite {
+    font-weight: bold;
+    display: block;
+    margin-top: 0.2rem;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    color: #888;
+  }
+  

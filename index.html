@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shorts Counter PWA</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🎥 Shorts & Reels Counter</h1>
+    <button id="toggle-dark">Toggle Dark Mode</button>
+  </header>
+
+  <section class="settings">
+    <h2>Settings</h2>
+    <label>
+      Max shorts/reels per day:
+      <input type="number" id="max-count" value="100" min="1" />
+    </label>
+
+    <fieldset>
+      <legend>Count separately for apps?</legend>
+      <label><input type="checkbox" id="count-youtube" checked /> YouTube Shorts</label>
+      <label><input type="checkbox" id="count-instagram" checked /> Instagram Reels</label>
+      <label><input type="checkbox" id="count-facebook" checked /> Facebook Reels</label>
+    </fieldset>
+  </section>
+
+  <section class="counter">
+    <h2>Today’s Count</h2>
+    <ul>
+      <li>YouTube Shorts: <span id="count-youtube-display">0</span></li>
+      <li>Instagram Reels: <span id="count-instagram-display">0</span></li>
+      <li>Facebook Reels: <span id="count-facebook-display">0</span></li>
+      <li><strong>Total Count: <span id="total-count">0</span></strong></li>
+    </ul>
+    <div id="reminder" class="reminder"></div>
+    <button id="reset-count">Reset Counts</button>
+  </section>
+
+  <section class="motivation">
+    <h2>Motivation Boost</h2>
+    <div id="quote-container">
+      <img id="motivator-photo" src="" alt="Motivational figure" />
+      <blockquote id="motivational-quote"></blockquote>
+      <cite id="quote-author"></cite>
+    </div>
+    <button id="new-quote">Show Me Another</button>
+  </section>
+
+  <footer>
+    <p>Made by Sriyananda</p>
+  </footer>
+
+  <div id="install-prompt" class="install-prompt">
+    <button id="install-btn">Install App</button>
+    <button id="dismiss-btn">Dismiss</button>
+  </div>
+</body>
+</html>
